@@ -1,0 +1,22 @@
+Nome: Studio J
+
+cores:	branco
+	beje
+	vermelho
+	preto
+	cinza
+	
+
+telas:	index
+	suites
+	reservas
+	contato
+	login
+	cadastro
+
+Procurar deixa as telas mais simples mas com detalhes que chaman atenção, usar cores que deixe o site mais limpo
+
+
+Contextualização:
+	Aos meus 14 anos eu comecei a trbaalhar como antenista em moteis e hoteis na maioria das vezes em moteis, e isso foi uma experiencia muito boa, pelo motivo de me dar uma noção de como as coisas funcionam e consequencialmente ganhar maturidade para as coisas do dia a dia, e isso foi muito significante na minha vida e por isso decidi fazer os ite de motel pq isso me lembra os tempos que eu trabalhava como antenista, e um dos meus sonhos seria ter um motel.
+

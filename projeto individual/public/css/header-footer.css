@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;   
+    background-color: var(--grey);
+}
+:root
+{
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #ecebeb;
+    --black1: #222;
+    --black2: #999;
+    --black3: rgb(240, 240, 240);
+    --Vermelho: rgb(168, 8, 40);
+    --vermelho2: crimson;
+}
+header{
+    flex-direction: column;
+    display: flex;
+}
+.div-contato{
+    height: 4vh;
+    width: 100%;
+    background-color: var(--black1);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse ;
+    
+}
+.top-contato {
+    margin-right: 8vw;
+    font-size: 0.8em;
+    width: 50vw;
+    list-style: none;
+    display: flex;
+    color: var(--black2) ;
+    justify-content: space-evenly   
+}
+.li-contato> a{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    width: 100%;
+    height: 13vh;
+    background-color: var(--white)  ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--black1) 0px 5px 10px;
+
+}
+.ul-menu{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.li-menu{
+    font-weight: 600;
+    font-size: 1em;
+    list-style: none;
+    color: var(--black1);
+}
+
+/* body*/
+.carroe{
+    width: 100%;
+    height: 40vh;
+    background-color: crimson;
+}
+.body-main{
+    margin-top: -90px;
+    position: relative;
+    background-color: var(--white);
+    height: 100vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    box-shadow: var(--black1) 0px 15px 20px;
+}
+.top-body-main{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.top-body-main > p{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.top-body-main > button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: var(--vermelho2  );
+    box-shadow: var(--Vermelho) 0px 10px 1px;
+    margin-left: 460px;
+}
+.top-body-main > button:hover{
+
+}
+.hr{
+    width: 90px;
+    border: #287bff solid 20px;
+}
