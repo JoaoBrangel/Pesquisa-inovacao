@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;   
-    background-color: var(--grey);
-}
+
 :root
 {
     --blue: #287bff;
@@ -15,11 +10,9 @@ body{
     --black3: rgb(240, 240, 240);
     --Vermelho: rgb(168, 8, 40);
     --vermelho2: crimson;
+    /* nota usar cores preto,cinza,uma cor quase vinho,*/
 }
-header{
-    flex-direction: column;
-    display: flex;
-}
+
 .div-contato{
     height: 4vh;
     width: 100%;
@@ -38,71 +31,96 @@ header{
     color: var(--black2) ;
     justify-content: space-evenly   
 }
-.li-contato> a{
+.li-contato > a{
+    font-size: 1em;
     color: white;
     text-decoration: none;
 }
-.menu{
-    width: 100%;
-    height: 13vh;
-    background-color: var(--white)  ;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    box-shadow: var(--black1) 0px 5px 10px;
-
+.li-contato > a:hover{
+    font-size: 1em;
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
 }
-.ul-menu{
-    width: 40vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+/* menu */
+
+img{
+    width: 30px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     
 }
-.li-menu{
-    font-weight: 600;
-    font-size: 1em;
-    list-style: none;
-    color: var(--black1);
-}
 
-/* body*/
-.carroe{
-    width: 100%;
-    height: 40vh;
-    background-color: crimson;
+.nav__links > li,a,button{
+    font-family:sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
 }
-.body-main{
-    margin-top: -90px;
-    position: relative;
-    background-color: var(--white);
-    height: 100vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    box-shadow: var(--black1) 0px 15px 20px;
-}
-.top-body-main{
-    height: 20vh;
-    width: 100%;
+header{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    padding: 20px 10%;
+    background-color: var(--black1);
 }
-.top-body-main > p{
-    margin-left: 50px;
-    font-size: 30px;
+.logo{
+    cursor: pointer;
+    margin-right: auto;
 }
-.top-body-main > button{
-    width: 200px;
-    height: 40px;
-    border: none;
-    background-color: var(--vermelho2  );
-    box-shadow: var(--Vermelho) 0px 10px 1px;
-    margin-left: 460px;
+.nav__links{
+    list-style: none;
+    
 }
-.top-body-main > button:hover{
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: 0.5s ease-in-out;
+}
+.nav__links li a:hover {
+    
+    color: #0088a9;
+}
+.nav__links a{
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 0 10px;
+}
+.nav__links a::after{
+    content: "";
+    position: absolute;
+    background-color: #0088a9;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease-in-out;
+}
+
+.nav__links a:hover::after{
+    width: 100%;
 
 }
-.hr{
-    width: 90px;
-    border: #287bff solid 20px;
+
+header button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
 }
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+

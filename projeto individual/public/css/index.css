@@ -1,0 +1,82 @@
+
+
+
+/* body*/
+.carroe{
+    width: 100%;
+    height: 40vh;
+    background-color: crimson;
+}
+.body-main{
+    margin-top: -90px;
+    background-color: var(--white);
+    height: 100vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    box-shadow: var(--black1) 0px 15px 20px;
+}
+.top-body-main{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    padding: 10px 50px;
+    
+}
+.top-body-main > p{
+    
+    font-size: 30px;
+}
+.top-body-main > a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #111;
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    
+    
+}
+.top-body-main > a::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+.top-body-main > a:hover::before{
+    transform: scaleY(0);
+}
+
+.top-body-main > a::after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scalex(1);
+}
+.top-body-main > a:hover::after{
+    transform: scalex(0);
+}
+
+.top-body-main a, span{
+    position: relative;
+    z-index: 3;
+}
+
+.hr{
+    width: 90px;
+    border: #287bff solid 20px;
+}
