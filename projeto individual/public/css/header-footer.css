@@ -51,9 +51,7 @@
 
 /* menu */
 
-img{
-    width: 30px;
-}
+
 
 .nav__links > li,a,button{
     font-family: 'Montserrat', sans-serif;
@@ -62,25 +60,33 @@ img{
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
+    
 }
 header{
     display: flex;
-    justify-content: space-evenly;
+    
     align-items: center;
     padding: 30px 10%;
     position: relative;
+    justify-content: center;
     
 }
 .logo{
     cursor: pointer;
+    height: auto;
+    width: 150px;
+    
+    
     
 }
 .nav__links{
     list-style: none;
-    letter-spacing: 50px;
+    
+    align-items: center;
+    display: flex;
 }
 .navnav{
-    margin-right: 70px;
+    
     list-style: none;
     letter-spacing: 2px;
     display: inline-block;
@@ -98,10 +104,12 @@ header{
 }
 
 .nav__links li {
+    
     display: inline-block;
     padding: 0px 20px;
 }
 .nav__links li a {
+    
     transition: 0.5s ease-in-out;
 }
 .nav__links li a:hover {
