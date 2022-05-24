@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
 
 :root
-{
-    --blue: #287bff;
+{   
     --white: #fff;
     --grey: #ecebeb;
     --black1: #222;
     --black2: #999;
     --black3: rgb(240, 240, 240);
     --Vermelho: rgb(168, 8, 40);
-    --vermelho2: crimson;
+    --vermelho2: #F9004D;
     /* nota usar cores preto,cinza,uma cor quase vinho,*/
 }
 
@@ -49,34 +55,46 @@ img{
     width: 30px;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
-
 .nav__links > li,a,button{
-    font-family:sans-serif;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 }
 header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 20px 10%;
-    background-color: var(--black1);
+    padding: 30px 10%;
+    position: relative;
+    
 }
 .logo{
     cursor: pointer;
-    margin-right: auto;
+    
 }
 .nav__links{
     list-style: none;
+    letter-spacing: 50px;
+}
+.navnav{
+    margin-right: 70px;
+    list-style: none;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+.navnav  span{
+    list-style: none;
     
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
 }
 
 .nav__links li {
@@ -88,7 +106,7 @@ header{
 }
 .nav__links li a:hover {
     
-    color: #0088a9;
+    color: var(--black2);
 }
 .nav__links a{
     letter-spacing: 0.5px;
@@ -98,8 +116,8 @@ header{
 .nav__links a::after{
     content: "";
     position: absolute;
-    background-color: #0088a9;
-    height: 3px;
+    background-color: var(--white);
+    height: 2px;
     width: 0;
     left: 0;
     bottom: -10px;
@@ -113,14 +131,14 @@ header{
 
 header button{
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: var(--vermelho2);
     border: none;
     border-radius: 50px;
     cursor:pointer;
     transition: 0.5s ease-in-out;
 }
 button:hover{
-    background-color: rgba(0,136,169,0.8);
+    background-color: var(--Vermelho);
 }
 
 
